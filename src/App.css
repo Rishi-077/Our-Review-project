@@ -1,0 +1,17 @@
+
+.container {
+    width: 100%;
+    height: auto;
+    font-family: 'PT Sans', sans-serif;
+}
+.title h2 {
+    display:flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+    margin-top: 25% ;
+    font-size: 80px;
+}
+.underline {
+    align-items: center;
+    border-bottom: 3px solid black ;
+}
