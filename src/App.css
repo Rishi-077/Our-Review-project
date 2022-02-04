@@ -15,3 +15,70 @@
     align-items: center;
     border-bottom: 3px solid black ;
 }
+
+.container Card{
+    position: relative;
+    width: 500px;
+}
+.container-image {
+    width: 200px;
+    margin: 0 auto;
+    clip-path:circle();  
+}
+i {
+   position:absolute;
+   top: 40px;
+   left: 560px;
+   font-size:30px;
+   background-color: #00b4d8;
+   color:white;
+   clip-path:circle();
+   padding: 5px;
+}
+
+/* media type */
+    @media screen and (max-width:1398px) {
+        i {
+    position:absolute;
+    top: 40px;
+    left: 470px;
+    font-size:30px;
+    }
+    }
+
+    @media screen and (max-width:1198px) {
+        i {
+         position:absolute;
+         top: 40px;
+         left: 380px;
+         font-size:30px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        i {
+         position:absolute;
+         top: 40px;
+         left: 260px;
+         font-size:30px;
+        }
+    }
+
+    @media screen and (max-width: 765px) {
+        i {
+         position:absolute;
+         top: 40px;
+         left: 170px;
+         font-size:30px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        i {
+         position:absolute;
+         top: 40px;
+         left: 160px;
+         font-size:30px;
+        }
+    }
+
+/* media type */
