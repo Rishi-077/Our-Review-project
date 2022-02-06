@@ -8,13 +8,26 @@ function Review ()
 {
     const [ index, setIndex ] = useState( 0 );
     const { name, job, image, text } = people[ index ];
+
+    const checkNumber = ( number ) =>
+    {
+        if ( number > people.length - 1 )
+        {
+            return 0;
+        }
+        if ( number < 0 )
+        {
+            return people.length - 1;   
+        }
+        return number;
+    }
     
     const prevPerson = () =>
     {   
         setIndex( (index) =>
         {
             let newIndex = index - 1;
-            return newIndex;
+            return checkNumber( newIndex );
         } );
     }
     const nextPerson = () =>
@@ -22,12 +35,21 @@ function Review ()
         setIndex( (index) =>
         {
             let newIndex = index + 1;
-            return newIndex;
+            return checkNumber( newIndex );
+            
         } );
     }
 
-    
-    console.log(people);
+    const randomPerson = () =>
+    {
+        let randomNumber = Math.floor( Math.random() * people.length );
+        if ( randomNumber === index )
+        {
+            randomNumber    = index + 1;
+        }
+        setIndex(checkNumber( randomNumber ));
+    }    
+
     return (
         <article className="Review">
             <div className="container">
@@ -41,11 +63,11 @@ function Review ()
                         <button className="btn-prev" onClick={prevPerson} on><TiChevronLeft /></button>
                         <button className="btn-next" onClick={nextPerson}><TiChevronRight /></button>
                     </div>
-                    <button className="btn-random">Surprise me</button>
+                    <button className="btn-random" onClick={randomPerson}>Surprise me</button>
                 </Card>
             </div>
         </article>
      );
 }
-
+    
 export default Review;

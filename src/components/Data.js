@@ -13,7 +13,7 @@ const people = [
     name: 'anna johnson',
     job: 'web designer',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
+      'https://thumbs.dreamstime.com/b/portrait-confident-cheerful-syrian-man-beard-smiling-portrait-cheerful-syrian-man-122725805.jpg',
     text:
       'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
   },
@@ -31,7 +31,7 @@ const people = [
     name: 'bill anderson',
     job: 'the boss',
     image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
+      'https://media.istockphoto.com/photos/portrait-of-syrian-young-man-picture-id544000218?k=20&m=544000218&s=170667a&w=0&h=4YHiP-ahnCPFdUw9Xspua-MHQ4LdlARGA1JiHJEaEzg=',
     text:
       'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
